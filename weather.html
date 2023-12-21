@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AtmosWeather</title>
+  <!-- Tab Icon -->
+  <link rel="icon" href="./Images/earth.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./weather.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row text-center text-white ">
+
+      <nav class="navbar ">
+        <div style="color: #35D6ED;" class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./Images/earth.png" alt="Logo" width="30" height="30"
+              class="d-inline-block align-text-center">
+            <span style="color: #35D6ED;font-weight:bold">Atmos</span><span style="color: white;font-weight:bold">Weather</span>
+          </a>
+
+
+
+
+        </div>
+
+      </nav>
+      <div id="result">
+        <div class="row">
+          <p class="name">City, Country</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-top">
+          <img id="weather-image" src="./Images/sky.png" alt="icon">
+          <h2 class="head"></h2>
+          <p style="font-size: 33px;"><span style="font-size: 26px;">&#xb0;</span>C</p>
+        </div>
+
+        <div class="row mt-3">
+          <p style="font-size: 23px;">Description</p>
+          <p style="font-size: 15px;">Feels like &#xb0;C </p>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-3 col-md-4 col">
+            <div class="box">
+              <i class="fa-solid fa-droplet logo"></i>
+
+            </div>
+            <p class="fs">Humidity:</p>
+            <p class="fb">%</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col">
+            <div class="box">
+              <i class="fa-solid fa-wind logo"></i>
+            </div>
+            <p class="fs">Wind:</p>
+            <p class="fb">km/hr</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col">
+            <div class="box">
+              <i class="fa-solid fa-gauge logo"></i>
+            </div>
+            <p class="fs">Pressure:</p>
+            <p class="fb">Pa</p>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">
+              <i class="fa-solid fa-eye logo"></i>
+            </div>
+            <p class="fs">Visibility:</p>
+            <p class="fb">m</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <p id="invalid"></p>
+
+
+        </div>
+
+      </div>
+      <p></p>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <form class="field me-5" role="search">
+          <input id="city" class="form-control" type="text" placeholder="Search for location" aria-label="Search">
+          <button onclick="search()" class="btn" type="button"><i class="fa-solid fa-magnifying-glass"
+              style="color: #35D6ED;background-color: white;"></i></button>
+
+
+        </form>
+        <button onclick="refresh()" class="ref"><i class="fa-solid fa-arrows-rotate"
+            style="color: #35d6ed;"></i></button>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <p class="text-center text-white mt-4 text-decoration-underline fw-bold">Designed by Prajith Prakash</p>
+  </footer>
+
+</body>
+<script src="weather.js">
+
+</script>
+
+</html>

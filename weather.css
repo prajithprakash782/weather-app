@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+background-image: url('https://source.unsplash.com/1600x900/?landscape');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100%;
+background-attachment:fixed;
+
+}
+
+
+body:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    
+}
+
+.name{
+    font-size: 28px;
+    
+}
+.head{
+    font-size: 132px; 
+    line-height: 115px; 
+    color: #35D6ED;
+}
+
+.fs{
+    font-size: 19px;
+    
+    
+}
+
+.fb{
+    font-weight: bold;
+    font-size: 17px;
+    color: #35D6ED;
+}
+
+.home{
+    color: #35D6ED;
+    text-decoration: none;
+
+}
+
+.home:hover{
+    color: white;
+    transition: 1s;
+}
+
+.field{
+    width: 70%;
+    position: relative;
+    
+}
+
+
+.field input{
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+}
+
+.field input:focus{
+    color: #35D6ED;
+    font-weight: bold;
+    box-shadow: none;
+    border:3px solid #35D6ED;
+    
+}
+.field input:focus::placeholder{
+    color: transparent;
+}
+.field input::placeholder{
+    color: #35D6ED;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    
+    
+    
+}
+.ref{
+    
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    
+    
+}
+
+#weather-image{
+    width: 120px;
+    
+}
+
+
+
+.logo{
+    color: #ffffff;
+    font-size: 50px;
+    
+}
+
+
+
+@media(max-width:500px) {
+    .name{
+        font-size: 18px;
+    }
+    .head{
+        font-size: 80px;
+    }
+    .logo{
+        font-size: 30px;
+        width: 15%;
+        padding-top: 5%;
+        
+    }
+    
+}
+
+@media (min-width:280px) and (max-width:380px) {
+    body::before{
+        height: 125vh;
+    }
+}
